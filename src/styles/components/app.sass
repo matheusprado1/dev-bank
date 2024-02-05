@@ -1,7 +1,15 @@
 main
     .container
         display: flex
-        width: 55rem
-        margin: 0 auto
-        gap: 90px
+        // width: 55rem
+        // margin: 0 auto
+        // gap: 90px
+        flex-direction: column
+        padding: 15px
+        gap: 20px
+        @media screen and (min-width:720px) 
+            flex-direction: row
+            max-width: 55rem
+            width: 100%
+            margin: 0 auto
 
