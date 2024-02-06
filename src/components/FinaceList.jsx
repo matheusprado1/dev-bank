@@ -1,6 +1,7 @@
 import FinanceCard from "./FincanceCard"
 
-const FinanceList = ({ transactions }) => {
+const FinanceList = ({ transactions, onDelete }) => {
+
   return (
     <ul>
       {transactions.map((transaction, index) => {
@@ -12,6 +13,7 @@ const FinanceList = ({ transactions }) => {
               type="Entrada"
               value={transaction.value}
               className="card__entry"
+              onDelete={() => onDelete(index)}
             >
               Excluir
             </FinanceCard>
@@ -24,6 +26,7 @@ const FinanceList = ({ transactions }) => {
               type="Saída"
               value={transaction.value}
               className="card__exit"
+              onDelete={() => onDelete(index)}
             >
               Excluir
             </FinanceCard>

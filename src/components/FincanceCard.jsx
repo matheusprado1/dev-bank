@@ -1,4 +1,6 @@
-const FinanceCard = ({ className, description, type, value, children }) => {
+const FinanceCard = ({ className, description, type, value, children, onDelete }) => {
+
+  const formattedValue = Number(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
   return (
     <li className={className}>
@@ -7,8 +9,8 @@ const FinanceCard = ({ className, description, type, value, children }) => {
         <span>{type}</span>
       </div>
       <div>
-        <p>{value}</p>
-        <p>{children}</p>
+        <p>{formattedValue}</p>
+        <a onClick={onDelete} >{children}</a>
       </div>
     </li>
   )

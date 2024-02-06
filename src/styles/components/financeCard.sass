@@ -1,23 +1,36 @@
 li
-    width: 500px
-    height: 87px
+    
+    // height: 100px
     display: flex
+    flex-direction: column
     padding: 12px 20px
     justify-content: space-between
     border: 1px solid variables.$grey-1
     border-radius: 4px
     background-color: variables.$grey-1
     color: variables.$grey-4
+    @media screen and (min-width:720px)
+        flex-direction: row
+        // height: 300px
+        width: 400px
     div
         display: flex
         flex-direction: column
         gap: 15px
         span
             color: variables.$grey-3
-
+    a
+        background-color: variables.$grey-2
+        width: 60px
+        padding: 5px
+        border-radius: 4px
+        cursor: pointer
+        &:hover
+            filter: brightness(90%)
 
 .card__entry
         border-left: 4px solid variables.$color-secondary
 
 .card__exit
         border-left: 4px solid variables.$grey-2
+

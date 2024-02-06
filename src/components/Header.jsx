@@ -1,12 +1,14 @@
-const Header = ({ children1, children2 }) => {
+const Header = ({ title, subtitle }) => {
   return (
-    <header>
-      <div>
-        <h1>{children1}<span>{children2}</span></h1>
-      </div>
-    </header>
+    <div className="header-background">
+      <header className="header-container">
+        <div className="content">
+          <h1>{title}<span>{subtitle}</span></h1>
+        </div>
+      </header>
+    </div>
   );
 }
 
 
-export default Header;
+export default Header
