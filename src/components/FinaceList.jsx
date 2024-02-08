@@ -37,4 +37,4 @@ const FinanceList = ({ transactions, onDelete }) => {
   )
 }
 
-export default FinanceList
+export default FinanceList;

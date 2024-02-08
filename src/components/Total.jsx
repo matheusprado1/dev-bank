@@ -24,4 +24,4 @@ const Total = ({ transactions }) => {
   )
 }
 
-export default Total
+export default Total;

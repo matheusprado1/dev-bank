@@ -16,4 +16,4 @@ const FinanceCard = ({ className, description, type, value, children, onDelete }
   )
 }
 
-export default FinanceCard
+export default FinanceCard;

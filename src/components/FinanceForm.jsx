@@ -30,30 +30,15 @@ const FinanceForm = ({ transactions, setTransactions }) => {
       <div>
         <Label htmlFor="description">
           Descrição
-          <Input id="description" onChange={(e) => setFormData({
-            ...formData,
-            description: e.target.value
-          })} type="text" name="description" placeholder="Digite aqui sua descrição"
-            value={formData.description}
-            required />
+          <Input inputProps={{ id: "description", onChange: (e) => setFormData({ ...formData, description: e.target.value }), type: "text", name: "description", placeholder: "Digite aqui sua descrição", value: formData.description, required: true }} />
         </Label>
         <Label htmlFor="value">
           Valor (R$)
-          <Input id="value" type="number" name="value" placeholder="1" onChange={(e) => setFormData({
-            ...formData,
-            value: e.target.value
-          })}
-            value={formData.value}
-            required />
+          <Input inputProps={{ id: "value", type: "number", name: "value", placeholder: "1", onChange: (e) => setFormData({ ...formData, value: e.target.value }), value: formData.value, required: true }} />
         </Label>
         <Label htmlFor="typeSelect">
           Tipo de valor
-          <select name="types" id="typeSelect" onChange={(e) => setFormData({
-            ...formData,
-            type: e.target.value
-          })}
-            value={formData.type}
-            required >
+          <select name="types" id="typeSelect" onChange={(e) => setFormData({ ...formData, type: e.target.value })} value={formData.type} required >
             <Option value="">Selecione uma opção</Option>
             <Option value="entry">Entrada</Option>
             <Option value="exit">Saída</Option>
@@ -68,3 +53,4 @@ const FinanceForm = ({ transactions, setTransactions }) => {
 }
 
 export default FinanceForm;
+
