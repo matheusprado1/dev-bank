@@ -15,7 +15,7 @@ Dev Bank é uma aplicação desenvolvida em React para gerenciar gastos, entrada
 ## Como Executar o Projeto
 
 1. Baixe o repositório
-`git clone https://github.com/matheusprado1/dev-bank`
+`git clone git@github.com:matheusprado1/dev-bank.git`
 
 2. Entre no diretório onde o repositório foi baixado
 `cd caminho/para/o/diretorio`
