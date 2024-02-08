@@ -34,7 +34,7 @@ const FinanceForm = ({ transactions, setTransactions }) => {
         </Label>
         <Label htmlFor="value">
           Valor (R$)
-          <Input inputProps={{ id: "value", type: "number", name: "value", placeholder: "1", onChange: (e) => setFormData({ ...formData, value: e.target.value }), value: formData.value, required: true }} />
+          <Input inputProps={{ id: "value", type: "number", name: "value", placeholder: "R$ 100,00", onChange: (e) => setFormData({ ...formData, value: e.target.value }), value: formData.value, required: true }} />
         </Label>
         <Label htmlFor="typeSelect">
           Tipo de valor
